@@ -36,14 +36,8 @@
         {{-- FOR USER MENU --}}
         <ul class="sidebar-menu">
             <li class="menu-header"></li>
-            <li class="dropdown">
-                <a href="#" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Mis proyectos</span></a>
-                <ul class="dropdown-menu">
-                <li><a class="nav-link" href="index.html">Crear nuevo</a></li>
-                <li><a class="nav-link" href="index2.html">Historial de proyectos</a></li>
-                </ul>
-            </li>
-            <li><a class="nav-link" href="#"><i class="fas fa-user-friends"></i><span>Pagos realizados</span></a></li>
+            <li><a class="nav-link" href="#"><i class="fas fa-user-friends"></i><span>Lugares visitados</span></a></li>
+            <li><a class="nav-link" href="#"><i class="fas fa-user-friends"></i><span>Mi codigo QR</span></a></li>
             <li><a class="nav-link" href="#"><i class="fas fa-user-friends"></i><span>Soporte</span></a></li>
             {{-- <li class="dropdown">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-broom"></i><span>Widgets</span></a>

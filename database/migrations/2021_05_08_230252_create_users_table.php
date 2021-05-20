@@ -25,12 +25,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
-            $table->unsignedBigInteger('profession_id');
             $table->timestamps();
-
-            $table->foreign('profession_id')
-                ->references('id')
-                ->on('professions');
         });
     }
 

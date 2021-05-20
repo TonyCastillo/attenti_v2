@@ -12,6 +12,34 @@
         <div class="breadcrumb-item">new-project</div>
       </div>
     </div>
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-md-3 border border-danger">
+          <div class="box-tools shadow">
+            <div class="icon"><img src="/img/qr-code.svg" alt=""></div>
+            <p>Escanear codigo</p>
+          </div>
+        </div>
+        <div class="col-md-3 border border-danger">
+          <div class="box-tools shadow">
+            <div class="icon"><img src="/img/qr-code.svg" alt=""></div>
+            <p>Escanear codigo</p>
+          </div>
+        </div>
+        <div class="col-md-3 border border-danger">
+          <div class="box-tools shadow">
+            <div class="icon"><img src="/img/qr-code.svg" alt=""></div>
+            <p>Escanear codigo</p>
+          </div>
+        </div>
+        <div class="col-md-3 border border-danger">
+          <div class="box-tools shadow">
+            <div class="icon"><img src="/img/qr-code.svg" alt=""></div>
+            <p>Escanear codigo</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 @endsection

@@ -91,29 +91,6 @@
                                 @enderror
                               </div>
                             </div>
-                            <div class="row">
-                              <div class="form-group col-6">
-                                <label>Profesión</label>
-                                <select class="form-control select2" name="profession" value="{{ old('profession') }}">
-                                    @forelse ($professions as $key => $profession)
-                                        <option value="{{ $profession->id }}">{{ $profession->name }}</option>
-                                    @empty
-                                        <option value="Agronomo">Otros</option>
-                                    @endforelse
-                                </select>
-                              </div>
-                              <div class="form-group col-6">
-                                <label>Productos de interes</label>
-                                <select class="form-control select2" multiple="" name="des_product[]" >
-                                    @forelse ($categories as $key => $category)
-                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
-                                    @empty
-                                        <option value="0">Otros</option>
-                                    @endforelse
-                                </select>
-                                <p class="small">Eliga algunos metodos de pagos mas comodos para realizar sus pagos.</p>
-                              </div>
-                            </div>
                             {{-- <div class="form-group">
                               <div class="custom-control custom-checkbox">
                                 <input type="checkbox" name="agree" class="custom-control-input" id="agree">

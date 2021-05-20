@@ -21,6 +21,7 @@
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="/template/assets/css/custom.css">
   <link rel='shortcut icon' type='image/x-icon' href='/template/assets/img/favicon.ico' />
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <div class="loader"></div>

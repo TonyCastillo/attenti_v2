@@ -42,10 +42,13 @@ section.login-register_drone .auth-content.register .card.card-primary {
   max-width: 800px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .box-tools {
   width: 150px;
   height: 150px;
-  border: solid 1px red;
   background-color: #353c48;
   display: flex;
   flex-direction: column;
@@ -53,6 +56,15 @@ section.login-register_drone .auth-content.register .card.card-primary {
   align-items: center;
   margin: 0 auto;
   border-radius: 15px;
+  transition: all ease-in-out 0.2s;
+}
+
+.box-tools:hover {
+  background-color: #444c58;
+}
+
+.box-tools.companies {
+  width: 200px;
 }
 
 .box-tools .icon {

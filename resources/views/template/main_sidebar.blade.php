@@ -25,6 +25,16 @@
           </ul>
         </li>
         <li><a class="nav-link" href="{{ url('/dashboard/admin/users') }}"><i class="fas fa-user-friends"></i><span>Administradores</span></a></li>
+        <li class="dropdown">
+            <a href="#" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Mis empresas</span></a>
+            <ul class="dropdown-menu">
+                @forelse (Auth::user()->companies()->get() as $company)
+                    <li><a class="nav-link" href="{{ url('/dashboard/empresa',$company->id) }}">{{ $company->company_name }}</a></li>
+                @empty
+                    <p>Sin empresas</p>
+                @endforelse
+            </ul>
+        </li>
 
       </ul>
       {{-- FOR ADMIN MENU --}}

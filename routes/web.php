@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\UsersController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Admin\CompanyController;
+use App\Http\Controllers\Admin\CheckinController;
 
 
 /*
@@ -51,7 +53,9 @@ Route::post('/dashboard/profile-edit', [ProfileController::class, 'profileEdit']
 
 
 /*CHECK INN CONTROLLER */
-Route::get('/dashboard/{empresa}', [CheckinController::class, 'index'])->name('checkin_bussines');
+Route::get('/dashboard/empresa/{id}', [CompanyController::class, 'index'])->name('company_index');
+Route::get('/dashboard/checkin', [CheckinController::class, 'index'])->name('checkin_companies');
+Route::get('/dashboard/{empresa}/checkin', [CheckinController::class, 'index'])->name('checkin_bussines');
 
 
 /*

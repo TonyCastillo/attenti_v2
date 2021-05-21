@@ -33,10 +33,12 @@ section.login-register_drone{
         }
     }
 }
+a:hover{
+    text-decoration: none;
+}
 .box-tools{
     width: 150px;
     height: 150px;
-    border: solid 1px red;
     background-color: #353c48;
     display: flex;
     flex-direction: column;
@@ -44,6 +46,13 @@ section.login-register_drone{
     align-items: center;
     margin: 0 auto;
     border-radius: 15px;
+    transition: all ease-in-out .2s;
+    &:hover{
+        background-color: #444c58;
+    }
+    &.companies{
+        width: 200px;
+    }
     .icon{
         width: 50px;
         height: 50px;

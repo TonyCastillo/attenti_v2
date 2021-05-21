@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 use App\Models\Role;
 use App\Models\Category;
+use App\Models\Company;
 
 
 class UserSeederTable extends Seeder
@@ -28,6 +29,7 @@ class UserSeederTable extends Seeder
         $user->password =  Hash::make('password');
         $user->save();
         $user->roles()->attach(Role::where('name', 'admin')->first());
+        $user->companies()->attach(Company::where('id', '1')->first());
 
 
         $user = new User();

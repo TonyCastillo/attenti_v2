@@ -159,7 +159,7 @@
                       <strong>Profesión:</strong>
                     </span>
                     <span class="float-right text-muted">
-                      {{ $profession->name }}
+                      
                     </span>
                   </p>
                   <p class="clearfix">

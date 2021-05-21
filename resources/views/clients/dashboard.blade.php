@@ -13,30 +13,35 @@
       </div>
     </div>
     <div class="container py-3">
-      <div class="row">
-        <div class="col-md-3 border border-danger">
+      <div class="row justify-content-center">
+        <div class="col-md-2">
           <div class="box-tools shadow">
             <div class="icon"><img src="/img/qr-code.svg" alt=""></div>
             <p>Escanear codigo</p>
           </div>
         </div>
-        <div class="col-md-3 border border-danger">
+        <div class="col-md-2">
+          <div class="box-tools shadow">
+            <div class="icon"><img src="/img/qr-code.svg" alt=""></div>
+            <p>Checkin realizados</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="box-tools shadow">
+            <div class="icon"><img src="/img/qr-code.svg" alt=""></div>
+            <p>Mi perfil</p>
+          </div>
+        </div>
+        <div class="col-md-2">
           <div class="box-tools shadow">
             <div class="icon"><img src="/img/qr-code.svg" alt=""></div>
             <p>Escanear codigo</p>
           </div>
         </div>
-        <div class="col-md-3 border border-danger">
-          <div class="box-tools shadow">
-            <div class="icon"><img src="/img/qr-code.svg" alt=""></div>
-            <p>Escanear codigo</p>
-          </div>
-        </div>
-        <div class="col-md-3 border border-danger">
-          <div class="box-tools shadow">
-            <div class="icon"><img src="/img/qr-code.svg" alt=""></div>
-            <p>Escanear codigo</p>
-          </div>
+      </div>
+      <div class="row justify-content-center pt-5">
+        <div class="col-md-3 text-center">
+          <a href="" class="btn btn-primary btn-covid-allert">Confirmar contacto positivo</a>
         </div>
       </div>
     </div>

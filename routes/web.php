@@ -49,6 +49,11 @@ Route::get('/dashboard/profile', [ProfileController::class, 'index'])->name('das
 Route::post('/dashboard/profile-edit', [ProfileController::class, 'profileEdit'])->name('profile_edit');
 
 
+
+/*CHECK INN CONTROLLER */
+Route::get('/dashboard/{empresa}', [CheckinController::class, 'index'])->name('checkin_bussines');
+
+
 /*
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home'); */
 Route::get('profile-view', function(){

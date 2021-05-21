@@ -8,8 +8,7 @@
       <h1>Crear proyecto nuevo</h1>
       <div class="section-header-breadcrumb">
         <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-        <div class="breadcrumb-item"><a href="#">projects</a></div>
-        <div class="breadcrumb-item">new-project</div>
+        <div class="breadcrumb-item">main</div>
       </div>
     </div>
     <div class="row">
@@ -18,7 +17,7 @@
             <div class="card-body card-type-3">
               <div class="row">
                 <div class="col">
-                  <h6 class="text-muted mb-0">Orders</h6>
+                  <h6 class="text-muted mb-0">Total de clientes</h6>
                   <span class="font-weight-bold mb-0">450</span>
                 </div>
                 <div class="col-auto">
@@ -29,7 +28,7 @@
               </div>
               <p class="mt-3 mb-0 text-muted text-sm">
                 <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 10%</span>
-                <span class="text-nowrap">Since last month</span>
+                <span class="text-nowrap">mes pasado</span>
               </p>
             </div>
           </div>
@@ -39,7 +38,7 @@
             <div class="card-body card-type-3">
               <div class="row">
                 <div class="col">
-                  <h6 class="text-muted mb-0">New Booking</h6>
+                  <h6 class="text-muted mb-0">Nuevos checkin</h6>
                   <span class="font-weight-bold mb-0">1,562</span>
                 </div>
                 <div class="col-auto">
@@ -50,7 +49,7 @@
               </div>
               <p class="mt-3 mb-0 text-muted text-sm">
                 <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 7.8%</span>
-                <span class="text-nowrap">Since last month</span>
+                <span class="text-nowrap">mes pasado</span>
               </p>
             </div>
           </div>
@@ -102,7 +101,7 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">
-              <h4>Estadísticas de proyectos</h4>
+              <h4>Usuarios ingresados</h4>
             </div>
             <div class="card-body">
               <canvas id="myChart"></canvas>
@@ -111,24 +110,22 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <div class="card">
             <div class="card-header">
               <h4>Ingresos</h4>
             </div>
             <div class="card-body">
-              <h4 class="header-title">Ingresos totales</h4>
-              <h2 class="mb-3"><i class="mdi mdi-currency-usd text-primary"></i>$1,65,203</h2>
+              <h4 class="header-title">Usuarios registrados</h4>
+              <h2 class="mb-3"><i class="mdi mdi-currency-usd text-primary"></i>1.250</h2>
               <div class="row mb-1">
                 <div class="col-6">
                   <p class="text-muted mb-1">Este mes</p>
-                  <h3 class="mt-0 font-20">$117,968
-                  </h3>
+                  <h3 class="mt-0 font-20">117</h3>
                 </div>
                 <div class="col-6">
                   <p class="text-muted mb-1">Mes anterior</p>
-                  <h3 class="mt-0 font-20">$74,568
-                  </h3>
+                  <h3 class="mt-0 font-20">350</h3>
                 </div>
               </div>
               <div class="mt-1">
@@ -139,10 +136,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-8 col-md-12 col-12 col-sm-12">
+        <div class="col-lg-7 col-md-12 col-12 col-sm-12">
           <div class="card">
             <div class="card-header">
-              <h4>Últimos proyectos </h4>
+              <h4>Últimos usuarios ingresados </h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -158,7 +155,6 @@
                     <th>Nombre</th>
                     <th>Estatus</th>
                     <th>Fecha</th>
-                    <th>Procesar</th>
                   </tr>
                   <tr>
                     <td class="p-0 text-center">
@@ -175,10 +171,6 @@
                       </div>
                     </td>
                     <td>2018-01-20</td>
-                    <td>
-                      <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i
-                          class="fas fa-pencil-alt"></i></a>
-                    </td>
                   </tr>
                   <tr>
                     <td class="p-0 text-center">
@@ -195,10 +187,6 @@
                       </div>
                     </td>
                     <td>2018-09-11</td>
-                    <td>
-                      <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i
-                          class="fas fa-pencil-alt"></i></a>
-                    </td>
                   </tr>
                   <tr>
                     <td class="p-0 text-center">
@@ -215,10 +203,6 @@
                       </div>
                     </td>
                     <td>2018-04-12</td>
-                    <td>
-                      <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i
-                          class="fas fa-pencil-alt"></i></a>
-                    </td>
                   </tr>
                   <tr>
                     <td class="p-0 text-center">
@@ -235,10 +219,6 @@
                       </div>
                     </td>
                     <td>2018-01-20</td>
-                    <td>
-                      <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i
-                          class="fas fa-pencil-alt"></i></a>
-                    </td>
                   </tr>
                 </table>
               </div>

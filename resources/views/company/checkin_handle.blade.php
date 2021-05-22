@@ -1,0 +1,63 @@
+@extends('layouts.main')
+
+@section('main_content')
+
+<section class="section">
+
+    <div class="section-header">
+      <h1>Bienvenido puedes registrarte</h1>
+      <div class="section-header-breadcrumb">
+        <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+        <div class="breadcrumb-item"><a href="#">projects</a></div>
+        <div class="breadcrumb-item">new-project</div>
+      </div>
+    </div>
+    <div class="container py-3">
+      <div class="row justify-content-around">
+        <div class="col-md-5">
+            <div class="form-check-in">
+                <form action="">
+                    <div class="row g-3">
+                        <div class="col px-0">
+                        <label for="ci_number">Ingrese su numero de CI</label>
+                          <input id="ci_numer" type="text" class="form-control" placeholder="C.I. Numero" aria-label="First name">
+                        </div>
+                    </div>
+                    <div class="row py-3 justify-content-around py-md-5">
+                        <div class="form-check radio_btn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                <p>30° - 34°</p>
+                              <img src="/img/confused.svg" alt="">
+                            </label>
+                        </div>
+                        <div class="form-check radio_btn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                <p>35° - 37°</p>
+                              <img src="/img/confused.svg" alt="">
+                            </label>
+                        </div>
+                        <div class="form-check radio_btn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                <p>38° - 40°</p>
+                              <img src="/img/confused.svg" alt="">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Realizar checkIn</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <h3>Escanear código QR</h3>
+            <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+@endsection

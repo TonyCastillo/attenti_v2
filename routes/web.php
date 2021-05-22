@@ -55,7 +55,7 @@ Route::post('/dashboard/profile-edit', [ProfileController::class, 'profileEdit']
 /*CHECK INN CONTROLLER */
 Route::get('/dashboard/empresa/{id}', [CompanyController::class, 'index'])->name('company_index');
 Route::get('/dashboard/checkin', [CheckinController::class, 'index'])->name('checkin_companies');
-Route::get('/dashboard/{empresa}/checkin', [CheckinController::class, 'index'])->name('checkin_bussines');
+Route::get('/dashboard/{id}/checkin', [CheckinController::class, 'checkinView'])->name('checkin_view');
 
 
 /*

@@ -16,8 +16,18 @@ class CheckinController extends Controller
         $companies = Auth::user()->companies()->get();
         return view('company.checkin_companies', compact('companies'));
     }
+    
+    public function checkinView($id){
+        $company = Company::find($id);
+        $user = Auth::user();
+        $user_has_company = $user->companies()->whereHas('users', function ($query) use($company) {
+            $query->where('users.id', $company->id);
+        })->exists();
 
-    public function checkinView(Company $company){
-
+        if($user_has_company){
+            return view('company.checkin_handle', compact('company'));
+        }else{
+            return abort(403, 'Unauthorized action.');
+        }
     }
 }

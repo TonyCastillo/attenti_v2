@@ -70,3 +70,24 @@ a:hover{
         color: #fff;
     }
 }
+.form-check-in{
+    
+    .radio_btn{
+        display: flex !important;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        label{
+            margin-bottom: 15px;
+            img{
+                width: 60px;
+            }
+        }
+        .form-check-input{
+            position: inherit;
+            margin: 0;
+        }
+    }
+    
+}

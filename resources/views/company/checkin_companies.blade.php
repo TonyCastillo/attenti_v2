@@ -16,7 +16,7 @@
       <div class="row justify-content-center">
         @isset($companies)
             @forelse ($companies as $company)
-                <a href="">
+                <a href="{{ url('dashboard/'.$company->id.'/checkin') }}">
                     <div class="col-md-2">
                         <div class="box-tools companies shadow">
                             <div class="icon"><img src="/img/restaurant.svg" alt=""></div>

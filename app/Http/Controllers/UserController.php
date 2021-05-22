@@ -69,13 +69,13 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-  
+
         $user = User::find($id);
-        
+       
         if ($user->update($request->all())) {
-           return redirect()->back()->with('status', 'Perfil actualizado!');
+           return redirect()->route('dashboard_profile');
         } else {
-            return redirect()->back()->with('status', 'Hubo un error, comuniquese con soporte');
+            return redirect()->route('dashboard_profile');
         }
     }
 

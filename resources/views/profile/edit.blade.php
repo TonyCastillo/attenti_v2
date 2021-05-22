@@ -28,8 +28,9 @@
                     </ul>
                     <div class="tab-content tab-bordered" id="myTab3Content">
                       <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab2">
-                        <form method="post" action="{{ route('profile_edit') }}" class="needs-validation">
+                        <form method="POST" action="{{ route('users.update', $user->id) }}" class="needs-validation">
                             @csrf
+                            @method('PUT')
                             <div class="card-header">
                               <h4>Editar mi perfil</h4>
                             </div>
@@ -66,7 +67,7 @@
                                 </div>
                                 <div class="form-group col-md-5 col-12">
                                   <label>Teléfono</label>
-                                  <input type="tel" class="form-control" value="{{ $user->telf }}" name="telf">
+                                  <input type="tel" class="form-control" value="{{ $user->phone_number }}" name="phone_number">
                                 </div>
                               </div>
                               <div class="row">

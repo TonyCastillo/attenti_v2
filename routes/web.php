@@ -5,10 +5,10 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\UsersController;
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\{ProfileController, UserController};
 use App\Http\Controllers\Admin\CompanyController;
 use App\Http\Controllers\Admin\CheckinController;
-
+use Illuminate\Routing\Route as RoutingRoute;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,3 +63,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('profile-view', function(){
     return view('profile.edit');
 });
+
+Route::resource('users', UserController::class);

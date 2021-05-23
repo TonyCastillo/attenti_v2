@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->enum('user_status', [ 'deshabilitado', 'activado'])->nullable();
             $table->string('name');
             $table->string('last_name');
+            $table->string('ci_number');
             $table->string('bio')->nullable();
             $table->string('phone_number')->nullable();
             $table->string('email')->unique();

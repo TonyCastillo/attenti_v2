@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="/template/assets/css/custom.css">
   <link rel='shortcut icon' type='image/x-icon' href='/template/assets/img/favicon.ico' />
   <link rel="stylesheet" href="/css/main.css">
+  <script src="/template/assets/bundles/sweetalert/sweetalert.min.js"></script>
+    <script src="/template/assets/js/page/sweetalert.js"></script>
 </head>
 <body>
     <div class="loader"></div>

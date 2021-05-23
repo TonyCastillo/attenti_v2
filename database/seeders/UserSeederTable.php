@@ -25,6 +25,7 @@ class UserSeederTable extends Seeder
         $user->user_status = 'activado';
         $user->name = 'Admin';
         $user->last_name = 'Drone';
+        $user->ci_number = '3675526';
         $user->email = 'admin@drone2map.com';
         $user->password =  Hash::make('password');
         $user->save();
@@ -35,6 +36,8 @@ class UserSeederTable extends Seeder
         $user = new User();
         $user->name = 'Marcio';
         $user->last_name = 'Enns';
+        $user->ci_number = '1234569';
+
         $user->email = 'marcio@gmail.test';
         $user->password =  Hash::make('123456789');
         $user->save();

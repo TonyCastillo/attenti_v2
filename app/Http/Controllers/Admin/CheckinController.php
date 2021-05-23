@@ -8,8 +8,10 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Http\Controllers\Admin\EventController;
 
+use App\Models\User;
 use App\Models\Company;
 use App\Models\Event;
+use App\Models\EventDetail;
 
 class CheckinController extends Controller
 {
@@ -39,7 +41,7 @@ class CheckinController extends Controller
             $now = now()->format('m/d/Y');
             $event = Event::Where('company_id', $company->id)->first();
             //dd($event);
-            if($event->activated_date === $now && $event->type === 'diario' ){
+            if($event && $event->activated_date === $now && $event->type === 'diario' ){
                 return view('company.checkin_handle', compact('company', 'event'));
             }else{
                 $event = Event::create([
@@ -61,7 +63,15 @@ class CheckinController extends Controller
         }
     }
 
-    public function createEvent($id){
-
+    public function createCheckin(Request $request){
+        //dd($request->all());
+        $user = User::Where('ci_number', $request->ci_number)->first();
+        $event = Event::find($request->event_name);
+        $event_detail = EventDetail::create([
+            'event_id' => $event->id,
+            'user_id' => $user->id
+        ]);
+        $success = 'purete';
+        return redirect()->back()->with('success', 'your message,here');   
     }
 }

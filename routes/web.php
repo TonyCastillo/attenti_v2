@@ -56,6 +56,7 @@ Route::post('/dashboard/profile-edit', [ProfileController::class, 'profileEdit']
 Route::get('/dashboard/empresa/{id}', [CompanyController::class, 'index'])->name('company_index');
 Route::get('/dashboard/checkin', [CheckinController::class, 'index'])->name('checkin_companies');
 Route::get('/dashboard/{id}/checkin', [CheckinController::class, 'checkinView'])->name('checkin_view');
+Route::post('/dashboard/checkin/create', [CheckinController::class, 'createCheckin'])->name('create_checkin');
 
 
 /*

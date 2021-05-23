@@ -98,10 +98,25 @@ a:hover {
 
 .form-check-in .radio_btn label {
   margin-bottom: 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 1px #BA6F11;
+  background-color: #fff;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
 }
 
 .form-check-in .radio_btn label img {
   width: 60px;
+  margin: 0 auto;
+}
+
+.form-check-in .radio_btn input[type=radio]:checked + label {
+  background-color: #444c58;
+  color: #fff;
 }
 
 .form-check-in .radio_btn .form-check-input {

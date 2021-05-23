@@ -80,10 +80,24 @@ a:hover{
         padding: 0;
         label{
             margin-bottom: 15px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            border: solid 1px #BA6F11;
+            background-color: #fff;
+            transition: all ease-in-out .2s;
+            cursor: pointer;
             img{
                 width: 60px;
+                margin: 0 auto;
             }
         }
+        input[type=radio]:checked + label {
+            background-color: #444c58;
+            color: #fff
+          } 
         .form-check-input{
             position: inherit;
             margin: 0;

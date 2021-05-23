@@ -14,7 +14,7 @@
       <ul class="sidebar-menu">
         <li class="menu-header">Main</li>
         <li><a class="nav-link" href="{{ url('/dashboard/admin') }}"><i class="fab fa-windows"></i><span>Dasboard</span></a></li>
-        <li><a class="nav-link" href="{{ url('/dashboard/admin/users') }}"><i class="fab fa-windows"></i><span>Inciar checkin</span></a></li>
+        <li><a class="nav-link" href="{{ url('/dashboard/checkin') }}"><i class="fab fa-windows"></i><span>Inciar checkin</span></a></li>
         <li><a class="nav-link" href="{{ url('/dashboard/admin/users') }}"><i class="fas fa-user-friends"></i><span>Clientes</span></a></li>
         <li class="dropdown">
           <a href="#" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Reportes</span></a>

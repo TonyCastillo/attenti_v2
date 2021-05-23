@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -88,5 +90,25 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function editPassword()
+    {
+        $user = Auth::user();
+        return view('profile.change_password', compact('user'));
+    }
+
+    public function updatePassword(Request $request)
+    {
+     
+      $validate =   $request->validate([
+            'new_password' => 'required',
+            'confirm_password' => 'required|same:new_password',
+        ]);
+
+   
+       $passUpdate = User::find(auth()->user()->id)->update(['password'=> Hash::make($request->new_password)]);
+      
+        return redirect()->route('dashboard_profile');
     }
 }

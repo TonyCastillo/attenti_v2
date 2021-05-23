@@ -155,6 +155,9 @@
               <a href="/dashboard/profile" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Mi perfil
               </a>
+              <a href="/users/edit-password" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Cambiar contraseña
+              </a>
               <a href="#" class="dropdown-item has-icon">
                 <i class="fas fa-cog"></i> Settings
               </a>

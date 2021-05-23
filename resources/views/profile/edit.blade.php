@@ -70,26 +70,7 @@
                                   <input type="tel" class="form-control" value="{{ $user->phone_number }}" name="phone_number">
                                 </div>
                               </div>
-                              <div class="row">
-                                <div class="form-group col-6">
-                                  <label for="password" class="d-block">Contraseña</label>
-                                  <input id="password" type="password" class="form-control pwstrength" name="password">
-                                  @error('password')
-                                      <span class="invalid-feedback" role="alert">
-                                          <strong>{{ $message }}</strong>
-                                      </span>
-                                  @enderror
-                                </div>
-                                <div class="form-group col-6">
-                                  <label for="password2" class="d-block">Confirmar contraseña</label>
-                                  <input id="password2" type="password" class="form-control" name="password_confirmation">
-                                  @error('password_confirmation')
-                                      <span class="invalid-feedback" role="alert">
-                                          <strong>{{ $message }}</strong>
-                                      </span>
-                                  @enderror
-                                </div>
-                              </div>
+                             
                               <div class="row">
                                 <div class="form-group col-12">
                                   <label>Bio</label>

@@ -5,10 +5,11 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\UsersController;
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\{ProfileController, UserController};
 use App\Http\Controllers\Admin\CompanyController;
 use App\Http\Controllers\Admin\CheckinController;
-
+use App\Models\User;
+use Illuminate\Routing\Route as RoutingRoute;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,3 +65,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('profile-view', function(){
     return view('profile.edit');
 });
+Route::get('users/edit-password',[UserController::class,'editPassword']);
+Route::post('users/update-password',[UserController::class,'updatePassword'])->name('users.update_password');
+Route::resource('users', UserController::class);

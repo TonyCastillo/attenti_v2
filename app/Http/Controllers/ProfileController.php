@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 
 class ProfileController extends Controller
 {
-    //
+
 
     public function index(){
         $user = Auth::user();
@@ -25,7 +25,7 @@ class ProfileController extends Controller
     public function profileEdit(Request $request){
         $user = Auth::user();
 
-        dd($request->all());
+      //  dd($request->all());
         /* $user->update([
             'name' => $request->name,
             'last_name' => $request->name,

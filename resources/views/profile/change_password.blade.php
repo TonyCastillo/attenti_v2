@@ -8,7 +8,7 @@
         <h1>Mi Perfil</h1>
         <div class="section-header-breadcrumb">
           <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-          <div class="breadcrumb-item">Mi perfil</div>
+          <div class="breadcrumb-item">Cambiar contraseña</div>
         </div>
       </div>
       <div class="section-body">
@@ -19,65 +19,40 @@
                     <ul class="nav nav-tabs" id="myTab2" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#about" role="tab"
-                          aria-selected="true">Editar Perfil</a>
+                          aria-selected="true">Cambiar password</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#settings" role="tab"
-                          aria-selected="false">Pagos realizdos</a>
-                      </li>
+                  
                     </ul>
                     <div class="tab-content tab-bordered" id="myTab3Content">
                       <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab2">
-                        <form method="POST" action="{{ route('users.update', $user->id) }}" class="needs-validation">
+                        <form method="POST" action="{{ route('users.update_password') }}" class="needs-validation">
                             @csrf
-                            @method('PUT')
+                          
                             <div class="card-header">
-                              <h4>Editar mi perfil</h4>
+                              <h4>Cambiar contraseña</h4>
                             </div>
                             <div class="card-body px-1">
                               <div class="row">
-                                <div class="form-group col-md-6 col-12">
-                                  <label>Nombre</label>
-                                  <input id="frist_name" type="text" class="form-control" name="name" value="{{ $user->name }}" autofocus>
-                                    @error('name')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
+                                <div class="form-group col-6">
+                                  <label for="password" class="d-block">Contraseña</label>
+                                  <input id="password" type="password" class="form-control pwstrength" name="new_password">
+                                  @error('new_password')
+                                      <span class="invalid-feedback" role="alert">
+                                          <strong>{{ $message }}</strong>
+                                      </span>
+                                  @enderror
                                 </div>
-                                <div class="form-group col-md-6 col-12">
-                                  <label>Apellido</label>
-                                  <input id="last_name" type="text" class="form-control" name="last_name" value="{{ $user->last_name }}">
-                                    @error('last_name')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="form-group col-md-7 col-12">
-                                  <label>Email</label>
-                                  <input id="email" type="email" class="form-control" name="email" value="{{ $user->email }}">
-                                    @error('email')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                </div>
-                                <div class="form-group col-md-5 col-12">
-                                  <label>Teléfono</label>
-                                  <input type="tel" class="form-control" value="{{ $user->phone_number }}" name="phone_number">
+                                <div class="form-group col-6">
+                                  <label for="password2" class="d-block">Confirmar contraseña</label>
+                                  <input id="password2" type="password" class="form-control" name="confirm_password">
+                                  @error('confirm_password')
+                                      <span class="invalid-feedback" role="alert">
+                                          <strong>{{ $message }}</strong>
+                                      </span>
+                                  @enderror
                                 </div>
                               </div>
-                             
-                              <div class="row">
-                                <div class="form-group col-12">
-                                  <label>Bio</label>
-                                  <textarea
-                                    class="form-control summernote-simple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatum alias molestias minus quod dignissimos.</textarea>
-                                </div>
-                              </div>
+                          
                             </div>
                             <div class="card-footer text-right">
                               <button class="btn btn-primary" type="submit">Guardar cambios</button>

@@ -71,7 +71,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        //dd($data);
+        
         $user = User::create([
             'name' => $data['name'],
             'last_name' => $data['last_name'],
@@ -81,10 +81,10 @@ class RegisterController extends Controller
 
         $user->roles()->attach(Role::where('name', 'user')->first());
         /* FOR MAIL DATA*/
-        $title = 'Bienvenido';
-        $message_mail = "Gracias por registrarte en Drone2Map";
-        $subject = 'Bienvenido';
-        Mail::to($user)->send(new UsersNotifications($user, $title, $message_mail, $subject));
+        // $title = 'Bienvenido';
+        // $message_mail = "Gracias por registrarte en Drone2Map";
+        // $subject = 'Bienvenido';
+        // Mail::to($user)->send(new UsersNotifications($user, $title, $message_mail, $subject));
         return $user;
     }
 }

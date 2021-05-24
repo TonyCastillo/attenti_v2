@@ -30,13 +30,13 @@
             <div class="row h-100 align-items-center">
                 <div class="col-md-6 p-0 d-none d-md-block">
                     <div class="login_background">
-                        <img src="/img/drone_background_01.jpg" class="img-fluid" alt="">
+                        <img src="/img/undraw_shared_goals_3d12-2.svg" class="img-fluid" alt="">
                     </div>
                 </div>
                 <div class="col-md-6 auth-content d-flex justify-content-center align-items-center flex-column">
                     <div class="card card-primary">
                         <div class="card-header">
-                          <h4>Login</h4>
+                          <h4>Attenti - Registro digital para clientes</h4>
                         </div>
                         <div class="card-body">
                           <form  method="POST" action="{{ route('login') }}" class="needs-validation" novalidate="">
@@ -87,7 +87,7 @@
                           </form>
                         </div>
                     </div>
-                    <div class="mt-5 text-muted text-center">No tienes una cuenta? <a href="{{ url('/register') }}" class="text-bold">Registrarse</a>
+                    <div class="mt-5 text-center">No tienes una cuenta? <a href="{{ url('/register') }}" class="text-bold">Registrarse</a>
                     </div>
                 </div>
             </div>

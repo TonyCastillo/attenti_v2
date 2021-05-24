@@ -29,12 +29,12 @@
     <section class="section login-register_drone">
         <div class="container-fluid">
             <div class="row h-100 align-items-center">
-                <div class="col-md-4 p-0 d-none d-md-block">
-                    <div class="login_background">
-                        <img src="/img/drone_background_02.jpg" class="img-fluid" alt="">
+                <div class="col-md-5 p-0 d-none d-md-block">
+                    <div class="login_background px-2">
+                        <img src="/img/undraw_add_friends_re_3xte.svg" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col-md-8 auth-content register d-flex justify-content-center align-items-center flex-column">
+                <div class="col-md-7 auth-content register d-flex justify-content-center align-items-center flex-column">
                     <div class="card card-primary">
                         <div class="card-header">
                           <h4>Registro de usuarios</h4>
@@ -62,14 +62,25 @@
                                 @enderror
                               </div>
                             </div>
-                            <div class="form-group">
-                              <label for="email">Email</label>
-                              <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
-                              @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                            <div class="row">
+                              <div class="form-group col-6">
+                                <label for="ci_number">C.I Número</label>
+                                <input id="ci_number" type="number" class="form-control" name="ci_number" value="{{ old('ci_number') }}" required>
+                                @error('ci_number')
+                                      <span class="invalid-feedback" role="alert">
+                                          <strong>{{ $message }}</strong>
+                                      </span>
+                                  @enderror
+                              </div>
+                              <div class="form-group col-6">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
+                                @error('email')
+                                      <span class="invalid-feedback" role="alert">
+                                          <strong>{{ $message }}</strong>
+                                      </span>
+                                  @enderror
+                              </div>
                             </div>
                             <div class="row">
                               <div class="form-group col-6">
